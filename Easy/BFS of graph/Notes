@@ -1,0 +1,11 @@
+Intituion:
+ Traverse the graphs level by level ..This is like implementation of bfs in undirected graph
+
+Approach:
+We use ArrayList to display the elements
+create a queue and add the elements and their adj node like bfs 
+Get all adjacent vertices of the dequeued vertex s
+If a adjacent has not been visited, then mark it visited and enqueue it
+
+Time Complexity: O(N) + O(2E), Where N = Nodes, 2E is for total degrees as we traverse all adjacent nodes.
+Space Complexity: O(3N) ~ O(N), Space for queue data structure visited array and an adjacency list
