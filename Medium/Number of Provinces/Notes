@@ -1,0 +1,12 @@
+Intitution:
+Given an undirected graph with V vertices. We say two vertices u and v belong to a single province if there is a path from u to v or v to u. Your task is to find the number of provinces.
+
+Approach:
+We need a visited array initialized to 0, representing the nodes that are not visited.
+Run the for loop looping from 0 to N, and call the DFS for the first unvisited node. 
+DFS it starts the DFS call from that unvisited node, and visits all the nodes that are in that province, and at the same time, it will also mark them as visited. 
+Since the nodes traveled in a traversal will be marked as visited, they will no further be called for any further DFS traversal. 
+Add a counter variable to count the number of times the DFS function is called
+
+Time Complexity: O(N) + O(V+2E), Where O(N) is for outer loop and inner loop runs in total a single DFS over entire graph, and we know DFS takes a time of O(V+2E). 
+Space Complexity: O(N) + O(N),Space for recursion stack space and visited array.
