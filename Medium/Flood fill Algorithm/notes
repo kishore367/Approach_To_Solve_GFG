@@ -1,0 +1,12 @@
+Intitution:
+From the centre of the image (with position (sr, sc) = (1, 1)), all pixels connected by a path of the same colour as the starting pixel are colored with the new colourNote the bottom corner is not colored 2, 
+because it is not 4-directionally connected to the starting pixel.
+
+Approach:
+To perform a "flood fill", consider the starting pixel, plus any pixels connected 4-directionally 
+To the starting pixel of the same colour as the starting pixel, plus any pixels connected 4-directionally to those pixels (also with the same colour as the starting pixel), and so on.
+We know about both the traversals, Breadth First Search (BFS) and Depth First Search (DFS). 
+We can follow BFS also, where we start at a given point and colour level wise, i.e., we go simultaneously to all its neighbours.
+
+Time Complexity: O(NxM + NxMx4) ~ O(N x M)
+Space Complexity: O(N x M) + O(N x M)
