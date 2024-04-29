@@ -1,0 +1,12 @@
+Intuition:
+The intuition is that we need to figure out the boundary land cells, go through their connected land cells and mark them as visited.
+The sum of all the remaining land cells will be the answer.
+
+Approach:
+Breadth First Search, BFS is a traversal technique where we visit the nodes level-wise
+Queue: Define a queue and insert the coordinates of the cell <row, column> which are in the boundary and are marked as 1
+Visited array: an array initialized to 0 indicating unvisited cells, apart from the ones in the boundary which are already in the queue ds. 
+And Traverse and mark vis[][]=1..and check and return no of remain unvisted lands
+
+Time Complexity: O(NxMx4) ~ O(N x M)
+Time Complexity: O(NxMx4) ~ O(N x M)
