@@ -1,0 +1,11 @@
+Intuition:
+The intuition is the brute force of filling colours using any traversal technique, just make sure no two adjacent nodes have the same colour.
+If at any moment of traversal, we find the adjacent nodes to have the same colour, it means that there is an odd cycle, or it cannot be a bipartite graph. 
+
+Approach:
+we will be solving it using BFS traversal
+That we can use the simple for loop concept  to call the traversals for unvisited nodes.
+And color with adj nodes if adj nodes color are same return false 
+
+Time Complexity: O(V + 2E)
+Space Complexity: O(V)
