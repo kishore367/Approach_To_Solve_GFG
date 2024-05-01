@@ -1,0 +1,10 @@
+Intuition:
+In a Directed Cyclic Graph, during traversal, if we end up at a node, which we have visited previously in the path, that means we came around a circle and ended up at this node, which determines that it has a cycle.
+
+Approach:
+We will be solving it using DFS traversal. DFS goes in-depth
+And when there are no further nodes to traverse in the current path
+Then it backtracks on the same path and traverses other unvisited nodes. 
+
+Time Complexity: O(V+E)+O(V)
+Space Complexity:O(2N) 
